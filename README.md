@@ -11,7 +11,7 @@ cronで数分に一度回すのに使われることを想定しています
 - 引数3 slack webhook URL
 
 ```
-./palert hoge "@channel hoge process not found" https://hooks.slack.com/services/XXX
+./palert hoge "<!channel> hoge process not found" https://hooks.slack.com/services/XXX
 ```
 
 ### 必要ライブリ
