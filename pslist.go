@@ -9,8 +9,8 @@ func main() {
 
     processes, _ := ps.Processes()
 
-    for i, p := range processes {
-        fmt.Printf("%d : %s\n", i, p.Executable())
+    for _, p := range processes {
+        fmt.Printf("pid=%d ppid=%d %s\n", p.Pid(), p.PPid(), p.Executable())
     }
 }
 
