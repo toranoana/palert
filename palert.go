@@ -32,11 +32,11 @@ func main() {
         os.Exit(1)
     }
 
-    for i, p := range processes {
+    for _, p := range processes {
         // fmt.Printf("%d : %s\n", i, p.Executable())
 
         if searchProcessName == p.Executable() {
-            fmt.Println("HIT PID=" + strconv.Itoa(i))
+            fmt.Println("HIT PID=" + strconv.Itoa(p.Pid()))
             os.Exit(0)
         }
 
